@@ -1,0 +1,12 @@
+git config  --global user.name kauanunues
+git config  --global user.email marykakinho@gmail.com
+
+dotnet new mvc -o  GalloFlix
+
+dotnet new sln --name  GalloFlix
+
+dotnet sln add GalloFlix\GalloFlix.csproj
+
+1 - Usar o site nuget.org e o dotnet CLI
+2 - Usar extensões do CODE como Nugte Gallery
+Shift + Ctrl 
