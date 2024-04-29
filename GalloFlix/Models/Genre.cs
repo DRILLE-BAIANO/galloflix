@@ -12,6 +12,8 @@ namespace GalloFlix.Models;
        public byte Id { get; set; }
 
        [Display(Name="Nome")] 
+       [Required(ErrorMessage ="Por favor, Informe oque você quer")]
+       [StringLength(30,ErrorMessage ="O nome deve possuir no máximo 30 caracteres")]
        public string Name { get; set; }
     
     }
