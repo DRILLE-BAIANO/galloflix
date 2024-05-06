@@ -15,6 +15,8 @@ namespace GalloFlix.Models;
        [Required(ErrorMessage ="Por favor, Informe oque você quer")]
        [StringLength(30,ErrorMessage ="O nome deve possuir no máximo 30 caracteres")]
        public string Name { get; set; }
+
+       public ICollection<MovieGenre> Myproperty {get;set;}
     
     }
  
