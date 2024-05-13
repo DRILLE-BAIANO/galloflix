@@ -14,5 +14,5 @@ public class AppDbContext : DbContext
 
     public DbSet<Movie> Movies { get; set; }
 
-    public DbSet<MovieGenre> MovieGenres { get; set; }
+   // public DbSet<MovieGenre> MovieGenres { get; set; }
 }
