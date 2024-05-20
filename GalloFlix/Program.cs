@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 // Add services to the container.
 string conn = builder.Configuration.GetConnectionString("GalloFlixConnection");
 var version = ServerVersion.AutoDetect(conn);
