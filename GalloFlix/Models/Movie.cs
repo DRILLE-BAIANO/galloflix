@@ -8,12 +8,18 @@ public class Movie
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int MyProperty { get; set; }
+    public uint Id { get; set; }
 
     [Display(Name ="Titulo Original")]
     [Required(ErrorMessage ="Por favor,informe o título original")]
     [StringLength(100,ErrorMessage ="Otítulo original deve possuir no maximo 100 caracteres")]
     public string OriginalTitle { get; set; }
+
+    
+    [Display(Name ="Titulo")]
+    [Required(ErrorMessage ="Por favor,informe o título")]
+    [StringLength(100,ErrorMessage ="O título original deve possuir no maximo 100 caracteres")]
+    public string Title { get; set; }
 
     
     [Display(Name ="sinopse ")]
